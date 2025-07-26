@@ -18,21 +18,15 @@ Click below to acces a Colab notebook for training YOLO models. It makes trainin
 
 | Criteria                     | Evaluation |
 |-----------------------------|------------|
-| **Training Trend**          | Stable and steadily decreasing across all losses. No major spikes or noise. |
-| **Overfitting**             | Not observed. Validation loss closely follows training loss. |
-| **Localization Accuracy**   | High: **mAP50 ≈ 98.5%** |
-| **General Detection Quality** | Good: **mAP50-95 ≈ 72.5%**, still improvable for harder cases |
-| **Precision**               | Increases consistently, reaching ~98.5% |
-| **Recall**                  | Also increases well, reaching ~96.5% |
-| **Fit for LPR Task**        | Suitable – detects license plates consistently and accurately |
+| **Training Trend**          | Losses decrease steadily without spikes |
+| **Overfitting**             | None observed; val loss aligns with train loss |
+| **Localization Accuracy**   | High: **mAP50 ≈ 95%** |
+| **General Detection Quality** | Improving: **mAP50-95 ≈ 22%** |
+| **Precision**               | Rising trend, reaches ~55% |
+| **Recall**                  | Rising trend, reaches ~52% |
+| **Fit for Detection Task**  | Decent – can detect, but needs improvement for fine accuracy |
 
 ---
-| Value               | Meaning                                                                 |
-|---------------------|-------------------------------------------------------------------------|
-| **181 layers**       | The model has 181 layers (e.g., Conv, BatchNorm, Upsample, etc.)        |
-| **9,428,179 parameters** | Total number of learnable parameters (weights + biases)                |
-| **0 gradients**       | The model is in inference mode (not training), so no gradients are calculated |
-| **21.5 GFLOPs**       | Approximate computational cost per image — lower means faster inference |
 
 
 ## Deploy YOLO Models
@@ -41,7 +35,7 @@ The `yolo_detect.py` script provides a basic example that shows how to load a mo
 To run inference with a yolov11 model on a USB camera at 1280x720 resolution, issue:
 
 ```
-python yolo_detect.py --model yolov8s.pt --source usb0 --resolution 1280x720
+python yolo_detect.py --model yolov11.pt --source usb0 --resolution 1280x720
 ```
 
 Here are all the arguments for yolo_detect.py:
