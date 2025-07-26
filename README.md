@@ -1,9 +1,10 @@
 # Conflagaration-Detection-Using-YOLOv11
 ## 🎥 YOLOv11 Vehicle Detection Demo
-<img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/3ff3c463-42cc-44ca-8996-13fc43e198e4" />
-<img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/1d1ce44e-2002-4ea6-814e-c7cd4036aabd" />
-<img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/92d5682a-62b8-4a37-94d3-068c75cb177b" />
-
+<p align="center">
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/3ff3c463-42cc-44ca-8996-13fc43e198e4" />
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/1d1ce44e-2002-4ea6-814e-c7cd4036aabd" />
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/92d5682a-62b8-4a37-94d3-068c75cb177b" />
+</p>
 
 ## Train YOLO Models With Google Colab
 
